@@ -22,7 +22,7 @@ global.port = process.env.PORT || "10000";
 global.auth = process.env.AUTH || "Pairing";                // Auth mode OR/Pairing.
 global.sessionFile = process.env.SESSION_FILE || "A17-SESSION";
 global.mongodb = process.env.MONGODB || "";                 // Mongodb url.
-global.website = "https://www.exenoz.tech"; 
+global.website = "https://chat.whatsapp.com/C5EGYtK5s3w4VEDTYiXZsI"; 
 global.github = "https://github.com/Diah082";
 
 
@@ -34,9 +34,9 @@ global.prefa = process.env.PREFIX ? process.env.PREFIX.split(".") : ["/"];
 global.Owner = process.env.OWNER ? process.env.OWNER.split(",") : ["6282326322300"];
 global.OwnerNumber = process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.split(",") : ["6282326322300"];
 global.ownertag = process.env.OWNER_TAG ? process.env.OWNER_TAG.split(",") : ["6282326322300"];
-global.OwnerName = process.env.OWNER_NAME || "Newbie";
-global.BotName = process.env.BOT_NAME || "Newbie";
-global.packname = process.env.PACK_NAME || "NEWBIE Bot";
+global.OwnerName = process.env.OWNER_NAME || "Rahmat Store";
+global.BotName = process.env.BOT_NAME || "Rahmat Store";
+global.packname = process.env.PACK_NAME || "Rahmat Bot";
 global.author = "By: Newbie";
 global.BotSourceCode = "https://github.com/Diah082/NewbieBot";
 global.SupportGroupLink = "https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp";
