@@ -7885,7 +7885,7 @@ _Click the button below to download_`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ *My developer's group:* ⚙ https://chat.whatsapp.com/CwFzjaOve4T3bAuO2sT8WZ`)
+        reply(`⚙ *My group:* ⚙ https://chat.whatsapp.com/Ij5C1pzf8lnAdI1YEHzgrd`)
       }
         break;
 
