@@ -39,7 +39,7 @@ global.BotName = process.env.BOT_NAME || "Rahmat Store";
 global.packname = process.env.PACK_NAME || "Rahmat Bot";
 global.author = "By: Newbie";
 global.BotSourceCode = "https://github.com/Diah082/NewbieBot";
-global.SupportGroupLink = "https://chat.whatsapp.com/Jo9QobvI8Ge2LdFVNL6Mlp";
+global.SupportGroupLink = "https://chat.whatsapp.com/Ij5C1pzf8lnAdI1YEHzgrd";
 
 
 //
