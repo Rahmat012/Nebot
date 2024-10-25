@@ -12,7 +12,6 @@ const {
   generateWAMessageFromContent,
   jidDecode,
   makeInMemoryStore,
-  PHONENUMBER_MCC,
   prepareWAMessageMedia,
   proto,
   useMultiFileAuthState,
@@ -113,7 +112,7 @@ const startA17  = async () => {
     if (pairingMode && !A17.authState.creds.registered) {
       phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
 
-      if (phoneNumber.startsWith(0))) {
+      if (phoneNumber.startsWith(0)) {
         console.log(chalk.bgBlack(chalk.redBright('Start with country code of your WhatsApp Number, Example : 916xxxx'), '\n> '));
         process.exit(0);
       }
